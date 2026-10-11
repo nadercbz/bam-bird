@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>BAM BIRD. Laut. Knusprig. Frech.</title>
+<meta name="description" content="Bam Bird: Chicken Strips, Burger und Crinkle Fries aus Berlin. Wenige Dinge, die aber laut.">
+<meta property="og:title" content="BAM BIRD. Laut. Knusprig. Frech.">
+<meta property="og:description" content="Chicken Strips, Burger und Crinkle Fries aus Berlin.">
+<meta property="og:image" content="assets/img/poster_burger.webp">
+<meta name="theme-color" content="#D6141C">
+<link rel="icon" href="assets/logo/badge_rot.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Ladebildschirm: die Scroll Videos müssen komplett geladen sein, sonst ruckelt das Spulen -->
+<div id="loader" aria-live="polite">
+  <img src="assets/logo/stack_weiss.svg" alt="Bam Bird" class="ld-logo">
+  <div class="ld-bar"><i></i></div>
+  <div class="ld-num"><span>0</span>%</div>
+</div>
+
+<header class="bar">
+  <a href="#bestellen" class="bar-a">Bestellen.</a>
+  <a href="#burger" class="bar-b">Über den Bird.</a>
+  <a href="#top" class="bar-c" aria-label="Bam Bird Start"><img src="assets/logo/line_weiss.svg" alt="BAM BIRD"></a>
+</header>
+
+<div id="smooth-wrapper">
+<div id="smooth-content">
+<main id="top">
+
+  <!-- 1 HERO: Burger dreht sich beim Scrollen -->
+  <section class="hero" id="hero">
+    <div class="hero-pin">
+      <video class="scrub" id="v-hero" muted playsinline preload="auto" poster="assets/img/poster_burger.webp" data-src="assets/video/hero"></video>
+      <div class="hero-claim">
+        <p class="kicker">Chicken Strips · Burger · Fries · Berlin</p>
+        <h1><span>Laut.</span> <span>Knusprig.</span> <span>Frech.</span></h1>
+      </div>
+      <div class="scroll-hint">Scroll <i></i></div>
+    </div>
+  </section>
+
+  <!-- 2 Statement, Wort für Wort -->
+  <section class="statement">
+    <p class="mono">01 · Die Idee</p>
+    <h2 class="big">Keine Ausreden.</h2>
+    <p class="reveal">Bei Bam Bird gibt es keine lange Karte. Knusprige Hähnchenbrust, Brioche, Crinkle Fries und sechs Dips. Mehr braucht es nicht. Wir machen wenige Dinge, die aber laut. Frisch paniert, Halal, mitten in Berlin. Bam Bird ist der Laden, den man nicht erklären muss: reinkommen, bestellen, knuspern, wiederkommen.</p>
+  </section>
+
+  <!-- 3 Laufschrift, läuft mit dem Scrollen -->
+  <section class="marquee" aria-hidden="true">
+    <div class="mq mq-1"><span>BAM! STRIPS ✦ BURGER ✦ FRIES ✦ DIPS ✦ BAM! STRIPS ✦ BURGER ✦ FRIES ✦ DIPS ✦</span></div>
+    <div class="mq mq-2"><span>KNUSPRIG ✦ LAUT ✦ FRECH ✦ HALAL ✦ KNUSPRIG ✦ LAUT ✦ FRECH ✦ HALAL ✦</span></div>
+  </section>
+
+  <!-- 4 Burger zerlegt sich beim Scrollen -->
+  <section class="explode" id="burger">
+    <div class="ex-pin">
+      <div class="ex-head">
+        <p class="mono">02 · The Bam</p>
+        <h2>Was drin ist, <br>ist drin.</h2>
+        <p class="ex-price">The Bam <b>8,90 €</b></p>
+      </div>
+      <div class="ex-stage">
+        <video class="scrub" id="v-explode" muted playsinline preload="auto" poster="assets/img/poster_burger.webp" data-src="assets/video/explode"></video>
+        <ul class="labels">
+          <li style="--y:16%" class="l r"><b>Sesam Brioche</b><small>weich, glänzend, leicht süß</small></li>
+          <li style="--y:32%" class="l r"><b>Pickles</b><small>sauer, knackig, dick geschnitten</small></li>
+          <li style="--y:45%" class="l r"><b>Crispy Chicken</b><small>Hähnchenbrust, frisch paniert</small></li>
+          <li style="--y:58%" class="l l2"><b>Bam Sauce</b><small>cremig, rauchig, ein Hauch Schärfe</small></li>
+          <li style="--y:71%" class="l r"><b>Eisberg</b><small>frisch und kalt</small></li>
+          <li style="--y:85%" class="l l2"><b>Brioche</b><small>hält alles zusammen</small></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 Die Stars, horizontal mit dem Scrollen -->
+  <section class="stars">
+    <div class="st-pin">
+      <div class="st-head"><p class="mono">03 · Die Stars</p><h2>Vier, die die Karte tragen.</h2></div>
+      <div class="st-track">
+        <article class="card"><div class="ph"><img src="assets/img/burger_the_bam.webp" alt="The Bam" loading="lazy"></div><h3>The Bam</h3><p>Knuspriges Hähnchen, Bam Sauce, Eisberg, Pickles, Brioche. Der Klassiker mit Knall.</p><b>8,90 €</b></article>
+        <article class="card"><div class="ph"><img src="assets/img/hot_bam.webp" alt="Hot Bam" loading="lazy"></div><h3>Hot Bam</h3><p>Hot Honey, Jalapeños und Hot Dust. Süß, scharf, laut.</p><b>9,90 €</b></article>
+        <article class="card"><div class="ph"><img src="assets/img/strips_dip.webp" alt="Bam Strips" loading="lazy"></div><h3>Bam Strips 5er</h3><p>5 Strips für richtigen Hunger. Dip inklusive. Bam Bam!</p><b>8,50 €</b></article>
+        <article class="card"><div class="ph"><img src="assets/img/cheesy_fries.webp" alt="Cheesy Fries" loading="lazy"></div><h3>Cheesy Fries</h3><p>Bam Fries unter einer Decke aus heißer Cheddar Sauce.</p><b>5,90 €</b></article>
+        <article class="card"><div class="ph"><img src="assets/img/mini_bird.webp" alt="Mini Bird" loading="lazy"></div><h3>Mini Bird</h3><p>Der kleine Bird für kleine Hände. Mildes Hähnchen, Mini Bun, sanfte Soße.</p><b>5,50 €</b></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 Bam Box füllt sich beim Scrollen -->
+  <section class="box">
+    <div class="bx-pin">
+      <video class="scrub" id="v-box" muted playsinline preload="auto" poster="assets/img/poster_box.webp" data-src="assets/video/box"></video>
+      <div class="bx-text">
+        <p class="mono">04 · Bam Box</p>
+        <h2>Alles rein.<br>Alles laut.</h2>
+        <p>5 Strips, Bam Fries, 1 Dip.</p>
+        <div class="tag"><span>Bam Box</span><b>11,90 €</b></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 Dips -->
+  <section class="dips">
+    <div class="dp-text">
+      <p class="mono">05 · Sechs Dips</p>
+      <h2>Sammle sie alle.</h2>
+      <ul class="dp-list">
+        <li style="--c:#F28C38"><i></i><b>Bam Sauce</b><span>Cremig, rauchig, ein Hauch Schärfe.</span></li>
+        <li style="--c:#F2B705"><i></i><b>Cheddar</b><span>Warm, cremig, Cheddar pur.</span></li>
+        <li style="--c:#7A2E14"><i></i><b>Smoky BBQ</b><span>Rauchig, süß, klassisch amerikanisch.</span></li>
+        <li style="--c:#F3EEDF"><i></i><b>Knoblauch</b><span>Frischer Knoblauch, Joghurt.</span></li>
+        <li style="--c:#E0731B"><i></i><b>Hot Honey</b><span>Süß vorne, Biss hinten.</span></li>
+        <li style="--c:#E2382B"><i></i><b>Sweet Chili</b><span>Süß, mild scharf, der Allrounder.</span></li>
+      </ul>
+      <p class="small">Jeder Dip 1,30 €. Zu Strips ist einer immer dabei.</p>
+    </div>
+    <div class="dp-img par" data-speed="0.85"><img src="assets/img/dips_sechs.webp" alt="Sechs Dips" loading="lazy"></div>
+  </section>
+
+  <!-- 8 Laden, Parallax -->
+  <section class="store">
+    <div class="sto-head"><p class="mono">06 · Der Laden</p><h2>Weiße Fliesen.<br>Rote Fugen.<br>Ein Schild, das man sieht.</h2></div>
+    <div class="sto-grid">
+      <figure class="sto-a"><div class="pimg"><img src="assets/img/aussen_nacht.webp" alt="Bam Bird bei Nacht" loading="lazy"></div><figcaption>Straßenladen, 60 m²</figcaption></figure>
+      <figure class="sto-b"><div class="pimg"><img src="assets/img/innen_theke.webp" alt="Theke" loading="lazy"></div><figcaption>Rote Rippen an der Theke</figcaption></figure>
+      <figure class="sto-c"><div class="pimg"><img src="assets/img/innen_gastraum.webp" alt="Gastraum" loading="lazy"></div><figcaption>20 Plätze, Karo und Edelstahl</figcaption></figure>
+      <figure class="sto-d"><div class="pimg"><img src="assets/img/center_front.webp" alt="Center Insel" loading="lazy"></div><figcaption>Insel im Food Court</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- 9 Grosse Laufschrift -->
+  <section class="marquee m2" aria-hidden="true">
+    <div class="mq mq-3"><span>BAM. JETZT KNUSPERT'S. ✦ BAM. JETZT KNUSPERT'S. ✦ BAM. JETZT KNUSPERT'S. ✦</span></div>
+  </section>
+
+  <!-- 10 Crew und Merch -->
+  <section class="crew">
+    <div class="cr-img par" data-speed="0.9"><img src="assets/img/uniform_team.webp" alt="Crew in Bam Bird Uniform" loading="lazy"></div>
+    <div class="cr-text">
+      <p class="mono">07 · Crew und Merch</p>
+      <h2>Die Tüte macht uns zum Foto.</h2>
+      <p class="reveal">Box, Becher, Karo Papier und Sticker sind gebaut, um gepostet zu werden. Jeder Gast trägt die Marke raus. Reichweite ohne Mediabudget.</p>
+    </div>
+    <div class="cr-img2 par" data-speed="1.1"><img src="assets/img/merch_flatlay.webp" alt="Merch" loading="lazy"></div>
+  </section>
+
+  <!-- 11 Schluss -->
+  <section class="end" id="bestellen">
+    <img src="assets/logo/stack_weiss.svg" alt="BAM BIRD" class="end-logo">
+    <h2>Bald in Berlin.</h2>
+    <p>Bestellen geht bald im Laden, am Kiosk und per Lieferdienst.</p>
+    <div class="end-box par" data-speed="0.9"><img src="assets/img/box_closed.webp" alt="Bam Bird Box" loading="lazy"></div>
+  </section>
+
+  <footer class="foot">
+    <p>Bam Bird ist ein Konzept von <a href="https://nadercbz.github.io/social-bites/" target="_blank" rel="noopener">Social Bites</a>, Berlin. Alle Bilder sind Visualisierungen. Noch nicht eröffnet.</p>
+    <p class="mono">© 2026 Social Bites</p>
+  </footer>
+
+</main>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

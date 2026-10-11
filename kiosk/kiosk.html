@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Bam Bird Bestell Terminal</title>
+<!-- Bam Bird Self Order Terminal (SOT). Hochkant 1080 x 1920, Touch.
+     kiosk.html            Kunden Terminal
+     kiosk.html?view=kds   Küchenmonitor (Bestellungen, Stationen, Ausverkauft)
+     kiosk.html?view=ready Abholmonitor (Nummern fertig / in Arbeit)
+     Bestellungen laufen über localStorage und BroadcastChannel zwischen Tabs im selben Browser (Demo). Im Betrieb ersetzt eine API diesen Teil, siehe Bestelllogik.md. -->
+<link rel="icon" href="assets/badge_rot.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=DM+Sans:opsz,wght@9..40,500;9..40,700;9..40,800&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="kiosk.css">
+</head>
+<body>
+<div id="stage"><div id="app"></div></div>
+<script src="menu.js"></script>
+<script src="kiosk.js"></script>
+</body>
+</html>
